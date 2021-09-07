@@ -25,7 +25,7 @@ public class karakter {
 		}else if(poeng >= 90 && poeng <= 100) {
 			karakter = "A";
 		}else {
-			karakter = "Ugyldig";
+			showMessageDialog(null, "det du skrev in var ugyldig. prøv igjen");
 			i--;
 		};
 		output += karakter;
