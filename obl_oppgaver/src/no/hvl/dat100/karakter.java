@@ -3,13 +3,15 @@ package no.hvl.dat100;
 import static javax.swing.JOptionPane.*;
 
 public class karakter {
-	
+
 	public static void main(String[]args){
-		
+
+
+
+		String karakter;
+		String output = "karakerer";
+		for(int i = 0; i < 10; i++){
 		int poeng = Integer.parseInt(showInputDialog("poeng"));
-		
-		String karakter; 
-		
 		if (poeng >= 39 && poeng <= 0) {
 			karakter = "F";
 		}else if(poeng >= 49 && poeng <= 40) {
@@ -24,9 +26,13 @@ public class karakter {
 			karakter = "A";
 		}else {
 			karakter = "Ugyldig";
+			i--;
 		};
-		showMessageDialog(null, "karakter " + karakter);
-		
+		output += karakter;
+
+		}
+		showMessageDialog(null, output);
+
 		}
 
 	}
