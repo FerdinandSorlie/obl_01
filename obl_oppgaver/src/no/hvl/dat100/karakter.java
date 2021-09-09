@@ -12,17 +12,17 @@ public class karakter {
 		String output = "karakerer";
 		for(int i = 0; i < 10; i++){
 		int poeng = Integer.parseInt(showInputDialog("poeng"));
-		if (poeng >= 39 && poeng <= 0) {
+		if (poeng <= 39 && poeng >= 0) {
 			karakter = "F";
-		}else if(poeng >= 49 && poeng <= 40) {
+		}else if(poeng <= 49 && poeng >= 40) {
 			karakter = "E";
-		}else if(poeng >= 50 && poeng <= 59) {
+		}else if(poeng <= 59 && poeng >= 50) {
 			karakter = "D";
-		}else if(poeng >= 60 && poeng <= 79) {
+		}else if(poeng <= 79 && poeng >= 60) {
 			karakter = "C";
-		}else if(poeng >= 80 && poeng <= 89) {
+		}else if(poeng <= 89 && poeng >= 80) {
 			karakter = "B";
-		}else if(poeng >= 90 && poeng <= 100) {
+		}else if(poeng <= 100 && poeng >= 90) {
 			karakter = "A";
 		}else {
 			showMessageDialog(null, "det du skrev in var ugyldig. prøv igjen");
