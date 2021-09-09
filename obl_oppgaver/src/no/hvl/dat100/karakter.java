@@ -8,7 +8,7 @@ public class karakter {
 
 
 
-		String karakter;
+		String karakter = "" ;
 		String output = "karakerer";
 		for(int i = 0; i < 10; i++){
 		int poeng = Integer.parseInt(showInputDialog("poeng"));
